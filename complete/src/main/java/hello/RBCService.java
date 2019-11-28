@@ -7,9 +7,10 @@ import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 
+import com.sun.tools.javac.util.Pair;
 import hello.DAO.Entity.RateTable;
 import hello.DAO.Repositories.RateCrudRepository;
-import javafx.util.Pair;
+
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -66,8 +67,8 @@ public class RBCService{
         Date date = simpleDateFormat.parse("2019-10-10");
         ArrayList<Pair<Double,Date>> ansList = parseResponse(getResponse());
         for (Pair pair : ansList){
-            Double rate = (Double) pair.getKey();
-            RateTable rateTable = new RateTable(rate,simpleDateFormat.parse((String) pair.getValue()));
+            Double rate = (Double) pair.fst;
+            RateTable rateTable = new RateTable(rate,simpleDateFormat.parse((String) pair.snd));
             rateCrudRepository.save(rateTable);
         }
     }
