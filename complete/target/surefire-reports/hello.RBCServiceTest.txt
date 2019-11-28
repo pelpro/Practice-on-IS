@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: hello.RBCServiceTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.382 s <<< FAILURE! - in hello.RBCServiceTest
+parseResponse(hello.RBCServiceTest)  Time elapsed: 0.011 s  <<< ERROR!
+java.lang.ArrayIndexOutOfBoundsException: 1
+	at hello.RBCServiceTest.parseResponse(RBCServiceTest.java:76)
+

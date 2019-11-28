@@ -1,0 +1,8 @@
+hello/DAO/Repositories/WeatherCrudRepository.class
+hello/RBCController.class
+hello/DarkSpyController.class
+hello/DAO/Entity/WeatherTable.class
+hello/DarkSpyService.class
+hello/RBCService.class
+hello/DAO/Entity/RateTable.class
+hello/DAO/Repositories/RateCrudRepository.class
