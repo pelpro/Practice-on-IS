@@ -1,6 +1,5 @@
 package hello.DAO.Entity;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.stereotype.Component;
 
@@ -11,31 +10,29 @@ import java.util.Date;
 
 
 @Entity
-@Table(name="Weather_Table")
-@JsonIgnoreProperties(ignoreUnknown = true)
-public class WeatherTable {
+@Table(name="Rate_Table")
+public class Rate {
 
     private final static DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
 
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     private Long id;
-    private Double temperature;
+    private Double rate;
     private String date;
 
-
-    public WeatherTable() {}
+    public Rate() {}
 
     public static String dateFormat(Date date) {
         return dateFormat.format(date);
     }
 
-    public WeatherTable(Double temperature, Date date) {
-        this.temperature = temperature;
+    public Rate(Double rate, Date date) {
+        this.rate = rate;
         this.date = dateFormat.format(date);
     }
 
-    public Double getTemperature() {
-        return temperature;
+    public Double getRate() {
+        return rate;
     }
 }

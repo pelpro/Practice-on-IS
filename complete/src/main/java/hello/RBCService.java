@@ -1,26 +1,20 @@
 package hello;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Date;
-import java.util.List;
-
 import com.sun.tools.javac.util.Pair;
-import hello.DAO.Entity.RateTable;
+import hello.DAO.Entity.Rate;
 import hello.DAO.Repositories.RateCrudRepository;
-
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.Bean;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 
 import javax.annotation.Resource;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
 @SpringBootApplication
 public class RBCService{
@@ -28,9 +22,9 @@ public class RBCService{
     public static void main(String[] args) {
         SpringApplication.run(RBCService.class, args);
     }
-    //public double getMaxRateForLastMonth() {
-    //    return getMaxFromArray(parseResponse(getResponse()));
-    //}
+    public double getMaxRateForLastMonth() {
+        return getRates().get(0);
+    }
 
     public Double getMaxFromArray(List<Double> doubleList) {
         double max = Double.MIN_VALUE;
@@ -68,8 +62,19 @@ public class RBCService{
         ArrayList<Pair<Double,Date>> ansList = parseResponse(getResponse());
         for (Pair pair : ansList){
             Double rate = (Double) pair.fst;
-            RateTable rateTable = new RateTable(rate,simpleDateFormat.parse((String) pair.snd));
+            Rate rateTable = new Rate(rate,simpleDateFormat.parse((String) pair.snd));
             rateCrudRepository.save(rateTable);
         }
+    }
+    public List<Double> getRates() {
+        String responseString = getResponse();
+        String[] lines = responseString.split("\n");
+        ArrayList<Double> ans = new ArrayList<>();
+        for (String line : lines) {
+            String[] elements = line.split(",");
+            Double pair = Double.parseDouble(elements[elements.length - 1]);
+            ans.add(pair);
+        }
+        return ans;
     }
 }
