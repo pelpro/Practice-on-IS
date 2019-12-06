@@ -1,10 +1,10 @@
 package hello;
 
-import com.sun.tools.javac.util.Pair;
 import hello.DAO.Entity.Rate;
 import hello.DAO.Repositories.RateCrudRepository;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.util.Pair;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
@@ -42,13 +42,15 @@ public class RBCService{
         return response.getBody();
     }
 
-    public ArrayList<Pair<Double,Date>> parseResponse(String responseString) {
+    public ArrayList<Pair<Double,Date>> parseResponse(String responseString) throws ParseException {
         String[] lines = responseString.split("\n");
         ArrayList<Pair<Double, Date>> ans = new ArrayList<>();
-
+        String pattern = "yyyy-MM-dd";
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+        Date date = simpleDateFormat.parse("2019-10-10");
         for (String line : lines) {
             String[] elements = line.split(",");
-            Pair<Double,Date> pair = new Pair(Double.parseDouble(elements[elements.length - 1]),elements[1]);
+            Pair<Double,Date> pair = Pair.of(Double.parseDouble(elements[elements.length - 1]),simpleDateFormat.parse((String)elements[1]));
             ans.add(pair);
         }
         return ans;
@@ -61,8 +63,8 @@ public class RBCService{
         Date date = simpleDateFormat.parse("2019-10-10");
         ArrayList<Pair<Double,Date>> ansList = parseResponse(getResponse());
         for (Pair pair : ansList){
-            Double rate = (Double) pair.fst;
-            Rate rateTable = new Rate(rate,simpleDateFormat.parse((String) pair.snd));
+            Double rate = (Double) pair.getFirst();
+            Rate rateTable = new Rate(rate,simpleDateFormat.parse((String) pair.getSecond()));
             rateCrudRepository.save(rateTable);
         }
     }

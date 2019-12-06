@@ -1,0 +1,15 @@
+hello/DAO/Entity/Rate.class
+hello/DAO/Repositories/WeatherCrudRepository.class
+hello/Representation/weatherObjects/WeatherResponse.class
+hello/PredictionService.class
+hello/DAO/Repositories/RateCrudRepository.class
+hello/Representation/weatherObjects/RbcResponse.class
+hello/Representation/weatherObjects/WeatherCurrently.class
+hello/Representation/weatherObjects/WeatherTable.class
+hello/DAO/Entity/Weather.class
+hello/Controllers/PredictionControllers.class
+hello/Representation/weatherObjects/WeatherDaily.class
+hello/DarkSpyService.class
+hello/RBCService.class
+hello/Controllers/DarkSpyController.class
+hello/Controllers/RBCController.class
