@@ -33,7 +33,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:8080/prediction",
+					"raw": "http://127.0.0.1:11111/prediction",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -77,7 +77,7 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:8080/rates?days=10",
+					"raw": "http://127.0.0.1:11111/rates?days=10",
 					"protocol": "http",
 					"host": [
 						"127",
