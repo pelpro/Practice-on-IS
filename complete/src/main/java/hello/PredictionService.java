@@ -39,8 +39,22 @@ public class PredictionService {
             sumXY += x.get(i) * rates.get(i);
         }
         Integer n = x.size();
-        Double b = (n * sumXY - sumX * sumY) / (n * sumX2 - sumX * sumX);
-        Double a = (sumY - b * sumX) / x.size();
+        Double b = 0.0;
+        Double z1 = (n * sumX2 - sumX * sumX);
+        if (z1 != 0 ) {
+            b = (n * sumXY - sumX * sumY) / z1;
+        }
+        else {
+            b = 0.0;
+        }
+        Integer size = x.size();
+        Double a = 0.0;
+        if (size!=0) {
+            a = (sumY - b * sumX) / size;
+        }
+        else {
+            a = 0.0;
+        }
         WeatherCurrently weatherCurrent = weatherService.getCurrentWeather();
         Double temperature = weatherCurrent.temperature;
         return a + b * temperature;

@@ -14,7 +14,7 @@ import java.util.Date;
 @Table(name="Weather_Table")
 public class Weather {
 
-    private final static DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
+    private final DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     private Long id;
@@ -43,7 +43,7 @@ public class Weather {
 
     public Weather() {}
 
-    public static String dateFormat(Date date) {
+    public String dateFormat(Date date) {
         return dateFormat.format(date);
     }
 

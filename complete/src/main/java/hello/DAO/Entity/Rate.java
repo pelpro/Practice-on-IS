@@ -13,7 +13,7 @@ import java.util.Date;
 @Table(name="Rate_Table")
 public class Rate {
 
-    private final static DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
+    private final DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
 
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
@@ -23,7 +23,7 @@ public class Rate {
 
     public Rate() {}
 
-    public static String dateFormat(Date date) {
+    public String dateFormat(Date date) {
         return dateFormat.format(date);
     }
 
