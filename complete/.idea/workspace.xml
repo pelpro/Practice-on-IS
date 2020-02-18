@@ -2,12 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e34b30a7-d939-4940-adf4-779e6c5c10ff" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/darkspy/darkspy.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/darkspy/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/predictions/predictions.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/predictions/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbc/rbc.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/DAO/Entity/Rate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/DAO/Entity/Rate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/DAO/Entity/Weather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/DAO/Entity/Weather.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/PredictionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/PredictionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/Controllers/DarkSpyController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/Controllers/PredictionControllers.java" beforeDir="false" afterPath="$PROJECT_DIR$/predictions/src/main/java/ru/sbt/prediction/PredictionControllers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/Controllers/RBCController.java" beforeDir="false" afterPath="$PROJECT_DIR$/rbc/src/main/java/ru/sbt/rbc/RBCController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/DAO/Entity/Rate.java" beforeDir="false" afterPath="$PROJECT_DIR$/rbc/src/main/java/ru/sbt/rbc/Rate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/DAO/Entity/Weather.java" beforeDir="false" afterPath="$PROJECT_DIR$/darkspy/src/main/java/ru/sbt/darkspy/DAO/Entity/Weather.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/DAO/Repositories/RateCrudRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/rbc/src/main/java/ru/sbt/rbc/RateCrudRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/DAO/Repositories/WeatherCrudRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/darkspy/src/main/java/ru/sbt/darkspy/DAO/Repositories/WeatherCrudRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/DarkSpyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/darkspy/src/main/java/ru/sbt/darkspy/DarkSpyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/PredictionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/predictions/src/main/java/ru/sbt/prediction/PredictionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/RBCService.java" beforeDir="false" afterPath="$PROJECT_DIR$/rbc/src/main/java/ru/sbt/rbc/RBCService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/Representation/weatherObjects/RbcResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/rbc/src/main/java/ru/sbt/rbc/RbcResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/Representation/weatherObjects/WeatherCurrently.java" beforeDir="false" afterPath="$PROJECT_DIR$/darkspy/src/main/java/ru/sbt/darkspy/weatherObjects/WeatherCurrently.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/Representation/weatherObjects/WeatherDaily.java" beforeDir="false" afterPath="$PROJECT_DIR$/darkspy/src/main/java/ru/sbt/darkspy/weatherObjects/WeatherDaily.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/Representation/weatherObjects/WeatherResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/darkspy/src/main/java/ru/sbt/darkspy/weatherObjects/WeatherResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/Representation/weatherObjects/WeatherTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/darkspy/src/main/java/ru/sbt/darkspy/weatherObjects/WeatherTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hello/DAO/RateTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hello/HelloControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hello/RBCServiceTest.java" beforeDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,11 +51,23 @@
     <expand />
     <select />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1UaJ5SCKFMCO30zdgGv4yuB5lda" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -40,21 +76,72 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="11" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/rbc/src/main/java" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="show.inlinked.gradle.project.popup" value="false" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/darkspy/src/main/java" />
+      <recent name="$PROJECT_DIR$/predictions/src/main/java" />
+      <recent name="$PROJECT_DIR$/rbc/src/main/java" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.PredictionService">
+    <configuration name="DarkSpyService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.sbt.darkspy.DarkSpyService" />
+      <module name="darkspy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DarkSpy" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="darkspy" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.sbt.darkspy.DarkSpyService" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PredictionService" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="predictions" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.sbt.prediction.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.sbt.prediction.PredictionService" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RBCService (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="rbc" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="RBCService" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RBCService (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="rbc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.sbt.rbc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.sbt.rbc.RBCService" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RBCService" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="gs-spring-boot" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="hello.RBCService" />
@@ -62,6 +149,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Spring Boot.RBCService" />
+      <item itemvalue="Spring Boot.RBCService (1)" />
+      <item itemvalue="Spring Boot.DarkSpy" />
+      <item itemvalue="Application.DarkSpyService" />
+      <item itemvalue="Spring Boot.RBCService (2)" />
+      <item itemvalue="Spring Boot.PredictionService" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.PredictionService" />
+        <item itemvalue="Application.DarkSpyService" />
+        <item itemvalue="Spring Boot.RBCService (2)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -75,6 +189,7 @@
       <updated>1575588588433</updated>
       <workItem from="1575588591145" duration="2193000" />
       <workItem from="1576150813116" duration="418000" />
+      <workItem from="1582034263759" duration="2916000" />
     </task>
     <servers />
   </component>
@@ -93,5 +208,71 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="496" y="203" key="#Project_Structure" timestamp="1582035283703">
+      <screen x="0" y="23" width="1792" height="1030" />
+    </state>
+    <state x="496" y="203" key="#Project_Structure/0.23.1792.1030@0.23.1792.1030" timestamp="1582035283703" />
+    <state x="360" y="367" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582035118547">
+      <screen x="0" y="23" width="1792" height="1030" />
+    </state>
+    <state x="360" y="367" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1792.1030@0.23.1792.1030" timestamp="1582035118547" />
+    <state x="502" y="470" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1582036706931">
+      <screen x="0" y="23" width="1792" height="1030" />
+    </state>
+    <state x="502" y="470" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.23.1792.1030@0.23.1792.1030" timestamp="1582036706931" />
+    <state x="662" y="404" width="467" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1582035326330">
+      <screen x="0" y="23" width="1792" height="1030" />
+    </state>
+    <state x="662" y="404" width="467" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1792.1030@0.23.1792.1030" timestamp="1582035326330" />
+    <state x="662" y="425" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1582034845822">
+      <screen x="0" y="23" width="1792" height="1030" />
+    </state>
+    <state x="662" y="425" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.23.1792.1030@0.23.1792.1030" timestamp="1582034845822" />
+    <state width="1358" height="268" key="GridCell.Tab.0.bottom" timestamp="1582037245898">
+      <screen x="0" y="23" width="1792" height="1030" />
+    </state>
+    <state width="1358" height="268" key="GridCell.Tab.0.bottom/0.23.1792.1030@0.23.1792.1030" timestamp="1582037245898" />
+    <state width="1358" height="268" key="GridCell.Tab.0.center" timestamp="1582037245897">
+      <screen x="0" y="23" width="1792" height="1030" />
+    </state>
+    <state width="1358" height="268" key="GridCell.Tab.0.center/0.23.1792.1030@0.23.1792.1030" timestamp="1582037245897" />
+    <state width="1358" height="268" key="GridCell.Tab.0.left" timestamp="1582037245897">
+      <screen x="0" y="23" width="1792" height="1030" />
+    </state>
+    <state width="1358" height="268" key="GridCell.Tab.0.left/0.23.1792.1030@0.23.1792.1030" timestamp="1582037245897" />
+    <state width="1358" height="268" key="GridCell.Tab.0.right" timestamp="1582037245898">
+      <screen x="0" y="23" width="1792" height="1030" />
+    </state>
+    <state width="1358" height="268" key="GridCell.Tab.0.right/0.23.1792.1030@0.23.1792.1030" timestamp="1582037245898" />
+    <state width="1358" height="268" key="GridCell.Tab.1.bottom" timestamp="1582037245899">
+      <screen x="0" y="23" width="1792" height="1030" />
+    </state>
+    <state width="1358" height="268" key="GridCell.Tab.1.bottom/0.23.1792.1030@0.23.1792.1030" timestamp="1582037245899" />
+    <state width="1358" height="268" key="GridCell.Tab.1.center" timestamp="1582037245898">
+      <screen x="0" y="23" width="1792" height="1030" />
+    </state>
+    <state width="1358" height="268" key="GridCell.Tab.1.center/0.23.1792.1030@0.23.1792.1030" timestamp="1582037245898" />
+    <state width="1358" height="268" key="GridCell.Tab.1.left" timestamp="1582037245898">
+      <screen x="0" y="23" width="1792" height="1030" />
+    </state>
+    <state width="1358" height="268" key="GridCell.Tab.1.left/0.23.1792.1030@0.23.1792.1030" timestamp="1582037245898" />
+    <state width="1358" height="268" key="GridCell.Tab.1.right" timestamp="1582037245898">
+      <screen x="0" y="23" width="1792" height="1030" />
+    </state>
+    <state width="1358" height="268" key="GridCell.Tab.1.right/0.23.1792.1030@0.23.1792.1030" timestamp="1582037245898" />
+    <state x="679" y="323" key="chooseDestDirectoryDialog" timestamp="1582035715664">
+      <screen x="0" y="23" width="1792" height="1030" />
+    </state>
+    <state x="679" y="323" key="chooseDestDirectoryDialog/0.23.1792.1030@0.23.1792.1030" timestamp="1582035715664" />
+    <state x="573" y="370" key="com.intellij.ide.util.TipDialog" timestamp="1582034276083">
+      <screen x="0" y="23" width="1792" height="1030" />
+    </state>
+    <state x="573" y="370" key="com.intellij.ide.util.TipDialog/0.23.1792.1030@0.23.1792.1030" timestamp="1582034276083" />
+    <state x="272" y="235" key="new project wizard" timestamp="1582034425049">
+      <screen x="0" y="23" width="1792" height="1030" />
+    </state>
+    <state x="272" y="235" key="new project wizard/0.23.1792.1030@0.23.1792.1030" timestamp="1582034425049" />
   </component>
 </project>

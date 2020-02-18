@@ -5,7 +5,13 @@
 
     <groupId>org.springframework</groupId>
     <artifactId>gs-spring-boot</artifactId>
+    <packaging>pom</packaging>
     <version>0.1.0</version>
+    <modules>
+        <module>darkspy</module>
+        <module>rbc</module>
+        <module>predictions</module>
+    </modules>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
