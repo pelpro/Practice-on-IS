@@ -1,7 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e34b30a7-d939-4940-adf4-779e6c5c10ff" name="Default Changelist" comment="" />
+    <list default="true" id="e34b30a7-d939-4940-adf4-779e6c5c10ff" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/darkspy/target/classes/META-INF/darkspy.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/darkspy/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/darkspy/target/classes/ru/sbt/darkspy/DAO/Entity/Rate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/darkspy/target/classes/ru/sbt/darkspy/DAO/Entity/Weather.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/darkspy/target/classes/ru/sbt/darkspy/DAO/Repositories/WeatherCrudRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/darkspy/target/classes/ru/sbt/darkspy/DSController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/darkspy/target/classes/ru/sbt/darkspy/DarkSpyService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/darkspy/target/classes/ru/sbt/darkspy/weatherObjects/WeatherCurrently.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/darkspy/target/classes/ru/sbt/darkspy/weatherObjects/WeatherDaily.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/darkspy/target/classes/ru/sbt/darkspy/weatherObjects/WeatherResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/darkspy/target/classes/ru/sbt/darkspy/weatherObjects/WeatherTable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/darkspy/target/darkspy-0.1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/darkspy/target/darkspy-0.1.0.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/darkspy/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/darkspy/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/darkspy/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/darkspy/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/darkspy/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictions/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictions/target/classes/ru/sbt/prediction/PredictionControllers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictions/target/classes/ru/sbt/prediction/PredictionService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictions/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictions/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictions/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictions/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictions/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictions/target/predictions-0.1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictions/target/predictions-0.1.0.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbc/target/classes/META-INF/rbc.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbc/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbc/target/classes/ru/sbt/rbc/RBCController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbc/target/classes/ru/sbt/rbc/RBCService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbc/target/classes/ru/sbt/rbc/Rate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbc/target/classes/ru/sbt/rbc/RateCrudRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbc/target/classes/ru/sbt/rbc/RbcResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbc/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbc/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbc/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbc/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbc/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbc/target/rbc-0.1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbc/target/rbc-0.1.0.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hello/Controllers/DarkSpyController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hello/Controllers/PredictionControllers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hello/Controllers/RBCController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hello/DAO/Entity/Rate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hello/DAO/Entity/Weather.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hello/DAO/Repositories/RateCrudRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hello/DAO/Repositories/WeatherCrudRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hello/DarkSpyService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hello/PredictionService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hello/RBCService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hello/Representation/weatherObjects/RbcResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hello/Representation/weatherObjects/WeatherCurrently.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hello/Representation/weatherObjects/WeatherDaily.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hello/Representation/weatherObjects/WeatherResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hello/Representation/weatherObjects/WeatherTable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/failsafe-reports/failsafe-summary.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gs-spring-boot-0.1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gs-spring-boot-0.1.0.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,6 +135,7 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../" />
       <recent name="$PROJECT_DIR$/darkspy/src/main/java" />
       <recent name="$PROJECT_DIR$/predictions/src/main/java" />
       <recent name="$PROJECT_DIR$/rbc/src/main/java" />
@@ -161,7 +238,7 @@
       <workItem from="1575588591145" duration="2193000" />
       <workItem from="1576150813116" duration="418000" />
       <workItem from="1582034263759" duration="10584000" />
-      <workItem from="1582273634770" duration="487000" />
+      <workItem from="1582273634770" duration="865000" />
     </task>
     <servers />
   </component>
