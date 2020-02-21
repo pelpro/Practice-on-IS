@@ -1,6 +1,7 @@
 package ru.sbt.rbc;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,7 +18,7 @@ public class RBCController {
     private RBCService service = new RBCService();
 
     @RequestMapping(value = "/rates", method = RequestMethod.POST)
-    public RbcResponse getRatesNDaysBefore(int days) throws ParseException, IOException {
+    public RbcResponse getRatesNDaysBefore(@RequestBody Integer days) throws ParseException, IOException {
         int daysBefore = days;
         if (days < 1) {
             daysBefore = 1;

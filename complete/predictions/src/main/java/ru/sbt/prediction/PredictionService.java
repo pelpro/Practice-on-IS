@@ -3,8 +3,11 @@ package ru.sbt.prediction;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
+import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
 
 import java.io.IOException;
@@ -17,14 +20,17 @@ public class PredictionService {
     public static void main(String[] args) {
         SpringApplication.run(PredictionService.class, args);
     }
-    public String predict() throws IOException {
+
+    public String predict() throws IOException, RestClientException {
         RestTemplate restTemplate = new RestTemplate();
 
-        String url = "http://127.0.0.1:8083/rates{20}";
-        ResponseEntity<String> response = restTemplate.getForEntity(url, String.class);
+        String url = "http://127.0.0.1:8083/rates";
+        HttpEntity<Integer> request = new HttpEntity<>(5);
+        ResponseEntity<String> response = restTemplate.postForEntity(url,request,String.class);
         String rates = response.getBody();
+        System.out.println(rates);
         String url2 = "http://127.0.0.1:8081/darkspy";
-        ResponseEntity<String> response2 = restTemplate.getForEntity(url, String.class);
+        ResponseEntity<String> response2 = restTemplate.getForEntity(url2, String.class);
         String weather = response2.getBody();
         return rates+weather;
     }
