@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e34b30a7-d939-4940-adf4-779e6c5c10ff" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/predictions/src/main/java/ru/sbt/prediction/PredictionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/predictions/src/main/java/ru/sbt/prediction/PredictionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/predictions/target/classes/ru/sbt/prediction/PredictionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/predictions/target/classes/ru/sbt/prediction/PredictionService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rbc/src/main/java/ru/sbt/rbc/RBCController.java" beforeDir="false" afterPath="$PROJECT_DIR$/rbc/src/main/java/ru/sbt/rbc/RBCController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rbc/target/classes/ru/sbt/rbc/RBCController.class" beforeDir="false" afterPath="$PROJECT_DIR$/rbc/target/classes/ru/sbt/rbc/RBCController.class" afterDir="false" />
-    </list>
+    <list default="true" id="e34b30a7-d939-4940-adf4-779e6c5c10ff" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -168,7 +161,7 @@
       <workItem from="1575588591145" duration="2193000" />
       <workItem from="1576150813116" duration="418000" />
       <workItem from="1582034263759" duration="10584000" />
-      <workItem from="1582273634770" duration="234000" />
+      <workItem from="1582273634770" duration="487000" />
     </task>
     <servers />
   </component>
