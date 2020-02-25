@@ -1,0 +1,29 @@
+version: '3'
+services:
+  darkspy:
+    image: "predictions:0.1.0"
+    ports:
+      - "8082:8082"
+    networks:
+      vpcbr:
+        ipv4_address: 10.5.0.5
+  predictions:
+    image: "darkspy:0.1.0"
+    ports:
+      - "8081:8081"
+    networks:
+      vpcbr:
+        ipv4_address: 10.5.0.6
+  rbc:
+    image: "rbc:0.1.0"
+    ports:
+      - "8083:8083"
+    networks:
+      vpcbr:
+        ipv4_address: 10.5.0.7
+networks:
+  vpcbr:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.5.0.0/16

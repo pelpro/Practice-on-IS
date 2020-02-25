@@ -24,12 +24,12 @@ public class PredictionService {
     public String predict() throws IOException, RestClientException {
         RestTemplate restTemplate = new RestTemplate();
 
-        String url = "http://127.0.0.1:8083/rates";
+        String url = "http://10.5.0.7:8083/rates";
         HttpEntity<Integer> request = new HttpEntity<>(5);
         ResponseEntity<String> response = restTemplate.postForEntity(url,request,String.class);
         String rates = response.getBody();
         System.out.println(rates);
-        String url2 = "http://127.0.0.1:8081/darkspy";
+        String url2 = "http://10.5.0.6:8081/darkspy";
         ResponseEntity<String> response2 = restTemplate.getForEntity(url2, String.class);
         String weather = response2.getBody();
         return rates+weather;

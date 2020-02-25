@@ -1,0 +1,9 @@
+/Users/a17661665/Git/Practice-on-IS/complete/darkspy/src/main/java/ru/sbt/darkspy/DarkSpyService.java
+/Users/a17661665/Git/Practice-on-IS/complete/darkspy/src/main/java/ru/sbt/darkspy/DAO/Entity/Weather.java
+/Users/a17661665/Git/Practice-on-IS/complete/darkspy/src/main/java/ru/sbt/darkspy/DAO/Entity/Rate.java
+/Users/a17661665/Git/Practice-on-IS/complete/darkspy/src/main/java/ru/sbt/darkspy/weatherObjects/WeatherTable.java
+/Users/a17661665/Git/Practice-on-IS/complete/darkspy/src/main/java/ru/sbt/darkspy/weatherObjects/WeatherCurrently.java
+/Users/a17661665/Git/Practice-on-IS/complete/darkspy/src/main/java/ru/sbt/darkspy/weatherObjects/WeatherDaily.java
+/Users/a17661665/Git/Practice-on-IS/complete/darkspy/src/main/java/ru/sbt/darkspy/DSController.java
+/Users/a17661665/Git/Practice-on-IS/complete/darkspy/src/main/java/ru/sbt/darkspy/DAO/Repositories/WeatherCrudRepository.java
+/Users/a17661665/Git/Practice-on-IS/complete/darkspy/src/main/java/ru/sbt/darkspy/weatherObjects/WeatherResponse.java

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="rbc" />
+        <module name="predictions" />
+        <module name="darkspy" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="complete" target="1.8" />
+      <module name="darkspy" target="1.8" />
+      <module name="predictions" target="1.8" />
+      <module name="rbc" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="darkspy" options="-parameters" />
+      <module name="predictions" options="-parameters" />
+      <module name="rbc" options="-parameters" />
+    </option>
+  </component>
+</project>
