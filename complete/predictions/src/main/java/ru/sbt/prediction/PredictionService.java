@@ -35,3 +35,4 @@ public class PredictionService {
         return rates+weather;
     }
 }
+//
