@@ -1,8 +1,11 @@
---- 
-- 
+---
+-
   hosts: webservers
-  remote_user: "{{ remote_user }}"
-  tasks: 
+  remote_user: mftiedu
+  tasks:
+#    -
+#      shell: "mkdir edu/PAA"
+#      name: "Create package for deploying" 
     - 
       copy: "src=../complete/predictions/target/predictions-0.1.0.jar dest=edu/PAA/ owner=mftiedu mode=7777"
       name: "Copy prediction-service to destination package"
@@ -15,18 +18,17 @@
     - 
       name: "Deploy darkspy-service"
       shell: "nohup java -jar edu/PAA/darkspy-0.1.0.jar -Dserver.port=10002 &"
-  vars_files: 
-    - secret.yaml
 - 
   hosts: dbservers
-  remote_user: "{{ remote_user }}"
+  remote_user: edumfti
   tasks: 
+#    -
+#      shell: "mkdir edu/PAA"
+#      name: "Create package for deploying"
     - 
       copy: "src=../complete/rbc/target/rbc-0.1.0.jar dest=edu/PAA/"
       name: "Copy rbc-service to destination package"
     - 
       name: "Deploy rbc-service"
       shell: "nohup java -jar /edu/PAA/rbc-0.1.0.jar &"
-  vars_files: 
-    - secret2.yaml
 

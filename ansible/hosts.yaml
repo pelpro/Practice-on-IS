@@ -1,14 +1,18 @@
---- 
+      --- 
 all: 
   children: 
     dbservers: 
       hosts: "194.87.146.4"
       vars: 
-        ansible_password: aNSHaPi
-        ansible_user: edumfti
+        ansible_password: "{{ ansible_password }}"
+        ansible_user: "{{ ansible_user }}"
+      vars_files: 
+        - secret.yml
     webservers: 
       hosts: "176.119.156.76"
       vars: 
-        ansible_password: cHONtic
-        ansible_user: mftiedu
-       
+        ansible_password: "{{ ansible_password }}"
+        ansible_user: "{{ ansible_user }}"
+      vars_files: 
+        - secret2.yml
+ 
