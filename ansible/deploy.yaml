@@ -2,6 +2,8 @@
 -
   hosts: webservers
   remote_user: mftiedu
+  vars_files:
+  - secret.yaml
   tasks:
 #    -
 #      shell: "mkdir edu/PAA"
