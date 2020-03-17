@@ -1,0 +1,5 @@
+ru/sbt/rbc/RBCController.class
+ru/sbt/rbc/Rate.class
+ru/sbt/rbc/RbcResponse.class
+ru/sbt/rbc/RBCService.class
+ru/sbt/rbc/RateCrudRepository.class

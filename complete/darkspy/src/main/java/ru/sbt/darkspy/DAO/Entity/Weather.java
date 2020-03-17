@@ -7,7 +7,7 @@ import java.util.Date;
 
 
 @Entity
-@Table(name="Weather_Table")
+@Table(name="Weather")
 public class Weather {
 
     private final DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");

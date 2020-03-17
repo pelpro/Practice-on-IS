@@ -1,0 +1,14 @@
+--- 
+all: 
+  children: 
+    dbservers: 
+      hosts: "194.87.146.4"
+      vars: 
+        ansible_password: aNSHaPi
+        ansible_user: edumfti
+    webservers: 
+      hosts: "176.119.156.76"
+      vars: 
+        ansible_password: cHONtic
+        ansible_user: mftiedu
+       

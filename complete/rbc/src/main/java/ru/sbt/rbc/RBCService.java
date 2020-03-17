@@ -1,5 +1,6 @@
 package ru.sbt.rbc;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.util.Pair;
@@ -13,6 +14,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 @SpringBootApplication
 public class RBCService{
@@ -20,7 +22,7 @@ public class RBCService{
     public static void main(String[] args) {
         SpringApplication.run(RBCService.class, args);
     }
-    public double getMaxRateForLastMonth() {
+    public double getMaxRateForLastMonth() throws ParseException {
         return getRates().get(0);
     }
 
@@ -56,18 +58,19 @@ public class RBCService{
     @Resource
     public RateCrudRepository rateCrudRepository;
     public void writeToDB() throws ParseException {
-        String pattern = "yyyy-MM-dd";
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
-        Date date = simpleDateFormat.parse("2019-10-10");
+        String pattern = "yyyy/MM/dd";
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("EEE MM dd kk:mm:ss zzzz yyyy", Locale.ENGLISH);
+        Date date = simpleDateFormat.parse("Mon 02 10 24:00:00 Coordinated Universal Time 2020");
         ArrayList<Pair<Double,Date>> ansList = parseResponse(getResponse());
         for (Pair pair : ansList){
-            Double rate = (Double) pair.getFirst();
-            Rate rateTable = new Rate(rate,simpleDateFormat.parse((String) pair.getSecond()));
-            rateCrudRepository.save(rateTable);
+            Rate rateTable = new Rate((Double) pair.getFirst(),(Date) pair.getSecond());
+            //rateCrudRepository.save(rateTable);
         }
+        rateCrudRepository.save(new Rate(1.,date));
     }
-    public List<Double> getRates() {
+    public List<Double> getRates() throws ParseException {
         String responseString = getResponse();
+        writeToDB();
         String[] lines = responseString.split("\n");
         ArrayList<Double> ans = new ArrayList<>();
         for (String line : lines) {

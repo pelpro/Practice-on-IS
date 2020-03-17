@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/complete.iml" filepath="$PROJECT_DIR$/.idea/complete.iml" />
       <module fileurl="file://$PROJECT_DIR$/darkspy/darkspy.iml" filepath="$PROJECT_DIR$/darkspy/darkspy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/postgres/postgres.iml" filepath="$PROJECT_DIR$/postgres/postgres.iml" />
       <module fileurl="file://$PROJECT_DIR$/predictions/predictions.iml" filepath="$PROJECT_DIR$/predictions/predictions.iml" />
       <module fileurl="file://$PROJECT_DIR$/rbc/rbc.iml" filepath="$PROJECT_DIR$/rbc/rbc.iml" />
     </modules>

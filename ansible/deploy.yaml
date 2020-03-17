@@ -1,0 +1,34 @@
+---
+-
+  hosts: webservers
+  remote_user: mftiedu
+  tasks:
+#    -
+#      shell: "mkdir edu/PAA"
+#      name: "Create package for deploying" 
+    - 
+      copy: "src=../complete/predictions/target/predictions-0.1.0.jar dest=edu/PAA/ owner=mftiedu mode=7777"
+      name: "Copy prediction-service to destination package"
+    - 
+      copy: "src=../complete/darkspy/target/darkspy-0.1.0.jar dest=edu/PAA/ owner=mftiedu mode=7777"
+      name: "Copy darkspy-service to destination package"
+    - 
+      name: "Deploy predictions-service"
+      shell: " nohup java -jar edu/PAA/predictions-0.1.0.jar &"
+    - 
+      name: "Deploy darkspy-service"
+      shell: "nohup java -jar edu/PAA/darkspy-0.1.0.jar -Dserver.port=10002 &"
+- 
+  hosts: dbservers
+  remote_user: edumfti
+  tasks: 
+#    -
+#      shell: "mkdir edu/PAA"
+#      name: "Create package for deploying"
+    - 
+      copy: "src=../complete/rbc/target/rbc-0.1.0.jar dest=edu/PAA/"
+      name: "Copy rbc-service to destination package"
+    - 
+      name: "Deploy rbc-service"
+      shell: "nohup java -jar /edu/PAA/rbc-0.1.0.jar &"
+

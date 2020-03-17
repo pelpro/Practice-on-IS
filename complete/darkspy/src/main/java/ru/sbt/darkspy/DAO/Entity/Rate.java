@@ -6,7 +6,7 @@ import java.util.Date;
 
 
 @Entity
-@Table(name="Rate_Table")
+@Table(name="Rate")
 public class Rate {
 
     private final DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
