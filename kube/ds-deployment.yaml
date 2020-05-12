@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: darkspy
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: darkspy
+  template:
+    metadata:
+      name: darkspy
+      labels:
+        app: darkspy
+    spec:
+      containers:
+        - name: darkspy
+          image: darkspy:0.1.0
+          imagePullPolicy: IfNotPresent
