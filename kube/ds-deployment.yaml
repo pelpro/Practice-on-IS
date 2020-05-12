@@ -18,3 +18,16 @@ spec:
         - name: darkspy
           image: darkspy:0.1.0
           imagePullPolicy: IfNotPresent
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: darkspy
+spec:
+  ports:
+  - port: 8081
+    targetPort: 8081
+  selector:
+    app: darkspy
+  type: LoadBalancer
+

@@ -29,3 +29,18 @@ spec:
                   key: postgres_password
           image: rbc:0.1.2
           imagePullPolicy: IfNotPresent
+          ports:
+          - containerPort: 8083
+            name: rbc
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: rbc
+spec:
+  ports:
+  - port: 8083
+    targetPort: 8083
+  selector:
+    app: rbc
+  type: LoadBalancer
