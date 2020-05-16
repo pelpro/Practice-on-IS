@@ -1,0 +1,20 @@
+global:
+  scrape_interval: 10s
+
+scrape_configs:
+  - job_name: 'darkspy_micrometer'
+    metrics_path: '/actuator/prometheus'
+    scrape_interval: 5s
+    static_configs:
+      - targets: ['darkspy:8081']
+  - job_name: 'predictions_micrometer'
+    metrics_path: '/actuator/prometheus'
+    scrape_interval: 5s
+    static_configs:
+      - targets: ['predictions:8082']
+  - job_name: 'rbc_micrometer'
+    metrics_path: '/actuator/prometheus'
+    scrape_interval: 5s
+    static_configs:
+      - targets: ['rbc:8083']
+

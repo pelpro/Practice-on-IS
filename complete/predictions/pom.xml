@@ -10,5 +10,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>predictions</artifactId>
-
+    <dependencies>
+        <dependency>
+            <groupId>io.micrometer</groupId>
+            <artifactId>micrometer-registry-prometheus</artifactId>
+        </dependency>
+    </dependencies>
 </project>

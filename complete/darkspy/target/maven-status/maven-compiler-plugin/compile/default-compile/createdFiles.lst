@@ -1,0 +1,9 @@
+ru/sbt/darkspy/weatherObjects/WeatherCurrently.class
+ru/sbt/darkspy/DAO/Repositories/WeatherCrudRepository.class
+ru/sbt/darkspy/DAO/Entity/Rate.class
+ru/sbt/darkspy/weatherObjects/WeatherTable.class
+ru/sbt/darkspy/DarkSpyService.class
+ru/sbt/darkspy/DSController.class
+ru/sbt/darkspy/weatherObjects/WeatherDaily.class
+ru/sbt/darkspy/DAO/Entity/Weather.class
+ru/sbt/darkspy/weatherObjects/WeatherResponse.class

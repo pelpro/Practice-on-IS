@@ -1,5 +1,21 @@
 version: '3'
 services:
+  prometheus:
+    image: prom/prometheus
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - "9080:9090"
+    networks:
+      vpcbr:
+        ipv4_address: 10.5.0.10
+  grafana:
+    image: grafana/grafana
+    ports:
+      - "3030:3000"
+    networks:
+      vpcbr:
+        ipv4_address: 10.5.0.11
   predictions:
     image: "predictions:0.1.0"
     ports:
@@ -48,6 +64,7 @@ services:
     networks:
       vpcbr:
         ipv4_address: 10.5.0.9
+
 networks:
   vpcbr:
     driver: bridge

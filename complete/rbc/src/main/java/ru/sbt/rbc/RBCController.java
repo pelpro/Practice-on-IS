@@ -17,18 +17,18 @@ public class RBCController {
     @Autowired
     private RBCService service = new RBCService();
 
-    @RequestMapping(value = "/rates", method = RequestMethod.POST)
-    public RbcResponse getRatesNDaysBefore(@RequestBody Integer days) throws ParseException, IOException {
+    @RequestMapping(value = "/rates", method = RequestMethod.GET)
+    public String getRatesNDaysBefore(@RequestBody Integer days) throws ParseException, IOException {
         int daysBefore = days;
         if (days < 1) {
             daysBefore = 1;
         } else if (days > 20) {
             daysBefore = 20;
         }
-        List<Double> rateHistory = service.getRates();
-        RbcResponse response = new RbcResponse();
-        response.value = rateHistory.get(rateHistory.size() - daysBefore);
-        return response;
+        //List<Double> rateHistory = service.getRates();
+        //RbcResponse response = new RbcResponse();
+        //response.value = rateHistory.get(rateHistory.size() - daysBefore);
+        return "RBC service";
     }
 
 }

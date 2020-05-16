@@ -154,5 +154,8 @@
     <orderEntry type="library" name="Maven: org.codehaus.plexus:plexus-container-default:1.0-alpha-9-stable-1" level="project" />
     <orderEntry type="library" name="Maven: classworlds:classworlds:1.1-alpha-2" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.plexus:plexus-io:2.0.3" level="project" />
+    <orderEntry type="library" name="Maven: io.micrometer:micrometer-registry-prometheus:1.1.5" level="project" />
+    <orderEntry type="library" name="Maven: io.prometheus:simpleclient_common:0.5.0" level="project" />
+    <orderEntry type="library" name="Maven: io.prometheus:simpleclient:0.5.0" level="project" />
   </component>
 </module>
